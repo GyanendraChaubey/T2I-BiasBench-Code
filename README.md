@@ -1,13 +1,12 @@
-# T2I-BiasBench (Modular Research Pipeline)
+# T2I-BiasBench-Code
 
-T2I-BiasBench is a **modular, reproducible research codebase** for text-to-image fairness and bias evaluation.
+T2I-BiasBench-Code is a **modular, reproducible research codebase** for text-to-image fairness and bias evaluation.
 
 ## What this repository provides
 
 - Config-driven experiments (YAML per model/dataset)
 - Reusable `src/` package with separated responsibilities
 - Single CLI for one-run or full-study execution
-- Optional bootstrap confidence intervals for scalar metrics
 - Standardized CSV outputs for paper tables/figures
 - Basic unit tests for metric sanity checks
 
@@ -44,15 +43,6 @@ pip install -e .
 python -m t2i_biasbench.cli run --config configs/datasets/bksdm.yaml
 ```
 
-With bootstrap confidence intervals (research mode):
-
-```bash
-python -m t2i_biasbench.cli run \
-  --config configs/datasets/bksdm.yaml \
-  --bootstrap-samples 1000 \
-  --seed 42
-```
-
 ## Run all models together
 
 ```bash
@@ -85,15 +75,3 @@ Extended metrics:
 11. Vendi Score (lexical proxy)
 12. CLIP Proxy Score
 13. Cultural Accuracy Ratio
-
-## Conference-readiness checklist
-
-- Fix random seeds (`--seed`) in all reported runs
-- Report confidence intervals for key scalar metrics
-- Keep dataset/model configs version-controlled in `configs/`
-- Export all final tables from `outputs/` and reference exact config files in appendix
-- Add ablations by cloning a dataset config and adjusting lexicons/rules
-
-## Notes
-
-- `configs/datasets/sd_template.yaml` is included as a template when `SD.csv` is available.
