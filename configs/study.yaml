@@ -1,0 +1,6 @@
+runs:
+  - config: datasets/bksdm.yaml
+  - config: datasets/gemini.yaml
+  - config: datasets/koala.yaml
+combined_output: ../outputs/study_combined_metrics_modular.csv
+composite_output: ../outputs/study_composite_summary_modular.csv

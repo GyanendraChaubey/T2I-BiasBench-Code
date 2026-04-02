@@ -1,0 +1,11 @@
+model_name: BK-SDM
+input_csv: ../../BK-SDM.csv
+output_csv: ../../outputs/bksdm_metrics_modular.csv
+image_column: 0
+caption_column: 1
+prompt_rules:
+  beauty: [beauty]
+  doctor: [gender, doctor]
+  animal: [neutral, animal]
+  nature: [nature]
+  culture: [cultural, culture, festival]

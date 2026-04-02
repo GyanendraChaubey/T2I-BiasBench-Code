@@ -1,0 +1,11 @@
+model_name: Stable Diffusion v1.5
+input_csv: ../../SD.csv
+output_csv: ../../outputs/sd_metrics_modular.csv
+image_column: Image
+caption_column: Caption
+prompt_rules:
+  beauty: [beauty]
+  doctor: [gender, doctor]
+  animal: [neutral, animal]
+  nature: [nature]
+  culture: [cultural, culture, festival]

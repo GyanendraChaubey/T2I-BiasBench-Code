@@ -1,0 +1,11 @@
+model_name: GEMINI
+input_csv: ../../Gemini.csv
+output_csv: ../../outputs/gemini_metrics_modular.csv
+image_column: File Name
+caption_column: Image Description
+prompt_rules:
+  beauty: [beauty]
+  doctor: [gender, doctor]
+  animal: [animal, neutral]
+  nature: [nature]
+  culture: [culture, cultural, festival]

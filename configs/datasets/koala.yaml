@@ -1,0 +1,11 @@
+model_name: KOALA
+input_csv: ../../koala_all.csv
+output_csv: ../../outputs/koala_metrics_modular.csv
+image_column: image_id
+caption_column: captions
+prompt_rules:
+  beauty: [beauty]
+  doctor: [gender, doctor]
+  animal: [animal, neutral]
+  nature: [nature]
+  culture: [culture, cultural, festival]
