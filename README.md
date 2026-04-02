@@ -1,8 +1,8 @@
 # T2I-BiasBench (Modular Research Pipeline)
 
-This repository was refactored from notebook-only scripts into a **modular, reproducible research codebase** for text-to-image fairness and bias evaluation.
+T2I-BiasBench is a **modular, reproducible research codebase** for text-to-image fairness and bias evaluation.
 
-## What this refactor adds
+## What this repository provides
 
 - Config-driven experiments (YAML per model/dataset)
 - Reusable `src/` package with separated responsibilities
@@ -96,5 +96,4 @@ Extended metrics:
 
 ## Notes
 
-- Existing notebooks are preserved; this pipeline is the reproducible path for paper experiments.
 - `configs/datasets/sd_template.yaml` is included as a template when `SD.csv` is available.

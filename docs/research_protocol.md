@@ -32,7 +32,7 @@
 - `README.md` with exact run commands.
 - Dataset config files used for each table/figure.
 - Combined output CSV from study mode.
-- Scripted plotting notebooks/scripts that only consume `outputs/*.csv`.
+- Scripted plotting utilities that only consume `outputs/*.csv`.
 
 ## 6. Threats to validity (to include in paper)
 
